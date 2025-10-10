@@ -501,7 +501,15 @@ footer {
 
   .hero-botones {
     display: flex;
-    flex-direction: colu
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .hero-botones a {
+    width: 70%;
+    max-width: 250px;
   }
 }
 
