@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EasyTable</title>
+  <link rel="shortcut icon" href="logoicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" />
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Sobre nosotros</a>
+      <a href="contactanos.html">Contáctanos</a>
+    </nav>
+
+    <div class="botones">
+      <button class="btn-outline">Iniciar sesión</button>
+      <button class="btn-fill">Descargar app</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-texto">
+      <h2>Reserva tu mesa ideal sin complicaciones.</h2>
+      <p>Descubre restaurantes según tu estilo, presupuesto y ubicación.</p>
+
+      <div class="hero-botones">
+        <a href="#explorar" class="btn-dark">Explorar restaurantes</a>
+        <a href="#descargar" class="btn-blue">Descargar app</a>
+      </div>
+    </div>
+
+    <div class="hero-imagenes">
+      <img src="pc.png" alt="Vista en computadora" class="desktop" />
+      <img src="phone.png" alt="Vista en celular" class="mobile" />
+    </div>
+  </section>
+
+  <section id="funcionalidades" class="section funcionalidades">
+    <div class="container">
+      <h2>¿Qué hace especial a Table Easy?</h2>
+      <p class="subtitulo">
+        Cada función ha sido diseñada para hacer tus reservas más simples y personalizadas.
+      </p>
+
+      <div class="grid-funcionalidades">
+        <div class="card-funcion">
+          <img src="calendar.png" alt="Reserva Inteligente" class="icon-img">
+          <h3>Reserva Inteligente:</h3>
+          <p>Haz reservas en tiempo real y evita esperas innecesarias.</p>
+        </div>
+
+        <div class="card-funcion">
+          <img src="precio.png" alt="Comparador de Precios" class="icon-img">
+          <h3>Comparador de Precios:</h3>
+          <p>Encuentra restaurantes según tu presupuesto y estilo.</p>
+        </div>
+
+        <div class="card-funcion">
+          <img src="vr.png" alt="Exploración Virtual" class="icon-img">
+          <h3>Exploración Virtual:</h3>
+          <p>Explora el ambiente del restaurante antes de asistir.</p>
+        </div>
+
+        <div class="card-funcion">
+          <img src="star.png" alt="Recomendaciones Personalizadas" class="icon-img">
+          <h3>Recomendaciones Personalizadas:</h3>
+          <p>Recibe sugerencias basadas en tus gustos y ubicación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    © 2025 EasyTable — Todos los derechos reservados.
+  </footer>
+  
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

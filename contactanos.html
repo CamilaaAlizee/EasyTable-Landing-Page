@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contactanos | Table Easy</title>
+  <link rel="shortcut icon" href="logoicon.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" />
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Sobre nosotros</a>
+      <a href="contactanos.html">Contáctanos</a>
+    </nav>
+
+    <div class="botones">
+      <button class="btn-outline">Iniciar sesión</button>
+      <button class="btn-fill">Descargar app</button>
+    </div>
+  </header>
+  
+  <section class="faq-contacto">
+    <div class="faq">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="faq-item">
+        <h3>¿Cómo puedo hacer una reserva?</h3>
+        <p>Puedes hacerlo desde nuestra app o web ingresando al restaurante de tu preferencia y seleccionando la fecha y hora disponible.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>¿Es necesario crear una cuenta?</h3>
+        <p>No, puedes explorar restaurantes sin registrarte. Sin embargo, para reservar o dejar reseñas sí necesitas una cuenta.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>¿Puedo cancelar o modificar mi reserva?</h3>
+        <p>Sí, en la sección “Mis Reservas” puedes cancelar o reprogramar tu reserva hasta 1 hora antes de la cita.</p>
+      </div>
+    </div>
+
+    <div class="contacto">
+      <h2>¿Tu duda no está aquí?</h2>
+      <p>Déjanos tus datos y nos pondremos en contacto contigo.</p>
+
+      <form>
+        <div class="form-group">
+          <div class="input-box">
+            <label>Email</label>
+            <input type="email" placeholder="Ingresa tu correo electrónico" required />
+          </div>
+          <div class="input-box">
+            <label>Nombre</label>
+            <input type="text" placeholder="Ingresa tu nombre" required />
+          </div>
+        </div>
+        <div class="mensaje">
+          <label>Mensaje</label>
+          <textarea rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+        <button type="submit" class="btn-enviar">ENVIAR</button>
+      </form>
+    </div>
+  <div class="chatbot-btn">
+    <img src="chat.png" alt="Chatbot" />
+  </div>
+
+  </section>
+  <footer class="footer">
+    <p>© 2025 Table Easy. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

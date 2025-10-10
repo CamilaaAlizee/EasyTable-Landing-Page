@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 80px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 95px;
+  height: 55px;
+  border-radius: 8px;
+}
+
+.logo h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid #000;
+}
+
+.botones button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-outline {
+  border: 1px solid #333;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #f2f2f2;
+}
+
+.btn-fill {
+  background-color: #41B1B2;
+  color: white;
+  border: none;
+}
+
+.btn-fill:hover {
+  background-color: #269092;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.hero-texto {
+  flex: 1;
+}
+
+.hero-texto h2 {
+  font-size: 2.8rem;
+  color: #F89C49;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-texto p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.hero-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn-dark, .btn-blue {
+  text-decoration: none;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-dark {
+  background-color: #111;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+}
+
+.btn-blue {
+  background-color: #41B1B2;
+}
+
+.btn-blue:hover {
+  background-color: #269092;
+}
+
+.hero-imagenes {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-imagenes .desktop {
+  width: 420px;
+}
+
+.hero-imagenes .mobile {
+  position: absolute;
+  width: 180px;
+  bottom: 0;
+  right: 0px;
+}
+
+.funcionalidades {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.funcionalidades h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #F89C49;
+}
+
+.funcionalidades .subtitulo {
+  font-family: 'Roboto', sans-serif;
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+.grid-funcionalidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card-funcion {
+  background: rgb(250, 250, 250);
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-funcion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.icon-img {
+  width: 80px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.card-funcion h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.card-funcion p {
+  font-family: 'Roboto', sans-serif;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.sobre-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background-color: #ffffff;
+  gap: 40px;
+}
+
+.sobre-nosotros .contenido {
+  flex: 1;
+}
+
+.sobre-nosotros h2 {
+  color: #F89C49;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.sobre-nosotros p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.sobre-nosotros .imagen {
+  flex: 1;
+  text-align: center;
+}
+
+.sobre-nosotros .imagen img {
+  width: 90%;
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.faq-contacto {
+  background-color: #f7f7f7;
+  padding: 60px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.faq, .contacto {
+  flex: 1;
+}
+
+.faq h2 {
+  color: #F89C49;
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.faq-item h3 {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.faq-item p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.contacto h2 {
+  font-size: 1.8em;
+  color: #F89C49;
+  margin-bottom: 10px;
+}
+
+.contacto p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.input-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box label, .mensaje label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.input-box input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e5e5e5;
+  font-size: 1em;
+}
+
+.mensaje textarea {
+  width: 100%;
+  resize: none;
+}
+
+.btn-enviar {
+  margin-top: 20px;
+  background-color: #F89C49;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #f78b2e;
+}
+
+.chatbot-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 65px;
+  height: 65px;
+  background-color: #2e2e2e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  z-index: 999;
+}
+
+.chatbot-btn img {
+  width: 35px;
+  height: 35px;
+}
+
+.chatbot-btn:hover {
+  background-color: #0f0f0f;
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .faq-contacto {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .faq h2, .contacto h2 {
+    text-align: center;
+  }
+
+  .btn-enviar {
+    width: 100%;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px 25px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px 0;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu a:last-child {
+    border-bottom: none;
+  }
+
+  .botones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 50px 30px;
+    text-align: center;
+  }
+
+  .hero-imagenes {
+    margin-bottom: 40px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .navbar {
+    padding: 18px 30px;
+  }
+}
+@media (max-width: 600px) {
+  .funcionalidades {
+    padding: 60px 0;
+  }
+
+  .card-funcion {
+    max-width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  .sobre-nosotros {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .sobre-nosotros .contenido {
+    order: 2; 
+  }
+
+  .sobre-nosotros .imagen {
+    order: 1; 
+  }
+
+  .sobre-nosotros h2 {
+    font-size: 1.8em;
+  }
+
+  .sobre-nosotros p {
+    font-size: 1em;
+  }
+
+  .sobre-nosotros .imagen img {
+    width: 100%;
+    max-width: 350px;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nosotros | EasyTable</title>
+  <link rel="shortcut icon" href="logoicon.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" />
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Sobre nosotros</a>
+      <a href="contactanos.html">Contáctanos</a>
+    </nav>
+
+    <div class="botones">
+      <button class="btn-outline">Iniciar sesión</button>
+      <button class="btn-fill">Descargar app</button>
+    </div>
+  </header>
+
+  <section class="sobre-nosotros">
+    <div class="contenido">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        EasyTable es una plataforma innovadora, disponible en versión móvil y de escritorio, creada por estudiantes de la Facultad de Ingeniería de la Universidad de Ciencias Aplicadas. Nuestro objetivo es facilitar el proceso de buscar, encontrar o pedir servicios de comida a través de la inteligencia artificial.
+      </p>
+      <p>
+        Con EasyTable, las familias y turistas podrán encontrar fácilmente restaurantes que ofrecen buenos platos locales, espacios cómodos y reseñas auténticas de otros usuarios. Nos dedicamos a simplificar la búsqueda del lugar ideal para disfrutar en buena compañía.
+      </p>
+      <p><strong>¡Estamos comprometidos con la buena experiencia del usuario!</strong></p>
+    </div>
+
+    <div class="imagen">
+      <img src="equipo.jpg" alt="Equipo de EasyTable trabajando">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 EasyTable — Todos los derechos reservados.
+  </footer>
+
+  <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
