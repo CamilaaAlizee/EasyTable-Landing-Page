@@ -468,7 +468,7 @@ footer {
 @media (max-width: 900px) {
   .hero {
     flex-direction: column-reverse;
-    align-items: center; /* Centra todo horizontalmente */
+    align-items: center;
     padding: 40px 20px;
     text-align: center;
   }
