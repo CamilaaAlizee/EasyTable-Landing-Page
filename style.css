@@ -395,6 +395,69 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.1);
 }
 
+.chatbot-window {
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  width: 320px;
+  height: 420px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.25);
+  display: none; /* Oculto al inicio */
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.chatbot-header {
+  background: #2e2e2e;
+  color: white;
+  padding: 15px;
+}
+
+.chatbot-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.chatbot-header p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.chatbot-body {
+  flex: 1;
+  padding: 15px;
+  background: #f5f5f5;
+  overflow-y: auto;
+}
+
+.bot-msg {
+  background: #e1e1e1;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.chatbot-input {
+  padding: 12px;
+  border-top: 1px solid #ddd;
+  display: flex;
+}
+
+.chatbot-input input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background: #eee;
+}
+
 @media (max-width: 900px) {
   .faq-contacto {
     flex-direction: column;
