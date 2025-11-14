@@ -1,3 +1,6 @@
+/* ===========================
+   RESET & TIPOGRAFÍA GLOBAL
+=========================== */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +13,7 @@ body {
   color: #333;
   font-family: 'Roboto', sans-serif;
 }
+
 html {
   color-scheme: light;
   background-color: #fff;
@@ -19,6 +23,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
 
+
+/* ===========================
+   NAVBAR
+=========================== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -28,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+/* Logo */
 .logo {
   display: flex;
   align-items: center;
@@ -45,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+/* Menú */
 .menu {
   display: flex;
   gap: 40px;
@@ -62,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid #000;
 }
 
+/* Botones navbar */
 .botones button {
   padding: 10px 18px;
   border-radius: 8px;
@@ -89,6 +100,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #269092;
 }
 
+
+/* ===========================
+   HERO SECTION
+=========================== */
 .hero {
   display: flex;
   flex-direction: row;
@@ -117,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
 }
 
+/* Botones */
 .hero-botones {
   display: flex;
   flex-wrap: wrap;
@@ -148,6 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #269092;
 }
 
+/* Imágenes hero */
 .hero-imagenes {
   position: relative;
   flex: 1;
@@ -167,13 +184,16 @@ h1, h2, h3, h4, h5, h6 {
   right: 0px;
 }
 
+
+/* ===========================
+   SECCIÓN FUNCIONALIDADES
+=========================== */
 .funcionalidades {
   text-align: center;
   padding: 80px 0;
 }
 
 .funcionalidades h2 {
-  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 10px;
@@ -181,12 +201,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .funcionalidades .subtitulo {
-  font-family: 'Roboto', sans-serif;
   color: #555;
   font-size: 1rem;
   margin-bottom: 50px;
 }
 
+/* Grid de tarjetas */
 .grid-funcionalidades {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -197,6 +217,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
 }
 
+/* Tarjetas */
 .card-funcion {
   background: rgb(250, 250, 250);
   border-radius: 12px;
@@ -219,8 +240,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 15px;
 }
 
+/* Texto dentro de tarjeta */
 .card-funcion h3 {
-  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 10px;
@@ -228,27 +249,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-funcion p {
-  font-family: 'Roboto', sans-serif;
   color: #555;
   font-size: 0.95rem;
   line-height: 1.5;
 }
-.card-funcion:hover .icon-calendar {
-  content: url('./Imagenes/calendar-hover.png');
-}
 
-.card-funcion:hover .icon-precio {
-  content: url('./Imagenes/precio-hover.png');
-}
+/* Hover dinámico según ícono */
+.card-funcion:hover .icon-calendar { content: url('./Imagenes/calendar-hover.png'); }
+.card-funcion:hover .icon-precio { content: url('./Imagenes/precio-hover.png'); }
+.card-funcion:hover .icon-vr { content: url('./Imagenes/vr-hover.png'); }
+.card-funcion:hover .icon-star { content: url('./Imagenes/star-hover.png'); }
 
-.card-funcion:hover .icon-vr {
-  content: url('./Imagenes/vr-hover.png');
-}
 
-.card-funcion:hover .icon-star {
-  content: url('./Imagenes/star-hover.png');
-}
-
+/* ===========================
+   SECCIÓN SOBRE NOSOTROS
+=========================== */
 .sobre-nosotros {
   display: flex;
   align-items: center;
@@ -285,9 +300,12 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 450px;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
 }
 
+
+/* ===========================
+   FAQ & CONTACTO
+=========================== */
 .faq-contacto {
   background-color: #f7f7f7;
   padding: 60px 10%;
@@ -301,6 +319,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1;
 }
 
+/* FAQ */
 .faq h2 {
   color: #F89C49;
   font-size: 2em;
@@ -326,6 +345,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #555;
 }
 
+/* Contacto */
 .contacto h2 {
   font-size: 1.8em;
   color: #F89C49;
@@ -337,6 +357,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 25px;
 }
 
+/* Formulario */
 .form-group {
   display: flex;
   gap: 20px;
@@ -368,6 +389,7 @@ h1, h2, h3, h4, h5, h6 {
   resize: none;
 }
 
+/* Botón enviar */
 .btn-enviar {
   margin-top: 20px;
   background-color: #F89C49;
@@ -384,6 +406,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f78b2e;
 }
 
+
+/* ===========================
+   CHATBOT
+=========================== */
 .chatbot-btn {
   position: fixed;
   bottom: 25px;
@@ -411,6 +437,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.1);
 }
 
+/* Ventana del chatbot */
 .chatbot-window {
   position: fixed;
   bottom: 100px;
@@ -420,7 +447,7 @@ h1, h2, h3, h4, h5, h6 {
   background: white;
   border-radius: 18px;
   box-shadow: 0 5px 18px rgba(0,0,0,0.25);
-  display: none; /* Oculto al inicio */
+  display: none;
   flex-direction: column;
   overflow: hidden;
   z-index: 1000;
@@ -474,21 +501,10 @@ h1, h2, h3, h4, h5, h6 {
   background: #eee;
 }
 
-@media (max-width: 900px) {
-  .faq-contacto {
-    flex-direction: column;
-    gap: 20px;
-  }
 
-  .faq h2, .contacto h2 {
-    text-align: center;
-  }
-
-  .btn-enviar {
-    width: 100%;
-  }
-}
-
+/* ===========================
+   FOOTER
+=========================== */
 footer {
   text-align: center;
   padding: 20px;
@@ -497,6 +513,10 @@ footer {
   border-top: 1px solid #eee;
 }
 
+
+/* ===========================
+   MENÚ RESPONSIVE
+=========================== */
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -504,15 +524,14 @@ footer {
   color: #333;
 }
 
+/* Media queries */
 @media (max-width: 768px) {
   .navbar {
     flex-wrap: wrap;
     padding: 15px 25px;
   }
 
-  .menu-toggle {
-    display: block;
-  }
+  .menu-toggle { display: block; }
 
   .menu {
     display: none;
@@ -526,9 +545,7 @@ footer {
     padding: 15px 0;
   }
 
-  .menu.active {
-    display: flex;
-  }
+  .menu.active { display: flex; }
 
   .menu a {
     padding: 10px 0;
@@ -548,6 +565,10 @@ footer {
   }
 }
 
+
+/* ===========================
+   RESPONSIVE HERO
+=========================== */
 @media (max-width: 900px) {
   .hero {
     flex-direction: column-reverse;
@@ -558,36 +579,23 @@ footer {
 
   .hero-imagenes {
     margin-bottom: 30px;
-    position: relative;
   }
 
   .hero-imagenes .desktop {
     width: 80%;
     max-width: 350px;
-    height: auto;
   }
 
   .hero-imagenes .mobile {
-    position: absolute;
     width: 30%;
     max-width: 130px;
-    bottom: 0;
-    right: 15%; 
+    right: 15%;
   }
 
   .hero-texto {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .hero-botones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    margin-top: 20px;
   }
 
   .hero-botones a {
@@ -596,15 +604,15 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
-  .funcionalidades {
-    padding: 60px 0;
-  }
 
-  .card-funcion {
-    max-width: 90%;
-  }
+/* ===========================
+   RESPONSIVE OTRAS SECCIONES
+=========================== */
+@media (max-width: 600px) {
+  .funcionalidades { padding: 60px 0; }
+  .card-funcion { max-width: 90%; }
 }
+
 @media (max-width: 900px) {
   .sobre-nosotros {
     flex-direction: column;
@@ -612,13 +620,8 @@ footer {
     padding: 40px 5%;
   }
 
-  .sobre-nosotros .contenido {
-    order: 2; 
-  }
-
-  .sobre-nosotros .imagen {
-    order: 1; 
-  }
+  .sobre-nosotros .contenido { order: 2; }
+  .sobre-nosotros .imagen { order: 1; }
 
   .sobre-nosotros h2 {
     font-size: 1.8em;
