@@ -78,6 +78,21 @@
     <img src="./Imagenes/chat.png" alt="Chatbot" />
   </div>
 
+  <div class="chatbot-window" id="chatbotWindow">
+  <div class="chatbot-header">
+    <h3>TableBot</h3>
+    <p>¿En qué puedo ayudarte?</p>
+  </div>
+
+  <div class="chatbot-body">
+    <div class="bot-msg">Hola 👋, soy tu asistente virtual.</div>
+  </div>
+
+  <div class="chatbot-input">
+    <input type="text" placeholder="Escribe un mensaje..." disabled />
+  </div>
+</div>
+
   </section>
   <footer class="footer">
     <p>© 2025 Table Easy. Todos los derechos reservados.</p>
@@ -89,6 +104,15 @@
   menuToggle.addEventListener('click', () => {
     menu.classList.toggle('active');
   });
+
+  const chatbotBtn = document.querySelector('.chatbot-btn');
+  const chatbotWindow = document.getElementById('chatbotWindow');
+
+  chatbotBtn.addEventListener('click', () => {
+    chatbotWindow.style.display =
+      chatbotWindow.style.display === "flex" ? "none" : "flex";
+  });
+
 </script>
 </body>
 </html>
