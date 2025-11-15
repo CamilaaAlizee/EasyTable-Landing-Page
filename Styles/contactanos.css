@@ -1,0 +1,200 @@
+
+
+/* ===========================
+   FAQ & CONTACTO
+=========================== */
+.faq-contacto {
+  background-color: #f7f7f7;
+  padding: 60px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.faq, .contacto {
+  flex: 1;
+}
+
+/* FAQ */
+.faq h2 {
+  color: #F89C49;
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.faq-item h3 {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.faq-item p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Contacto */
+.contacto h2 {
+  font-size: 1.8em;
+  color: #F89C49;
+  margin-bottom: 10px;
+}
+
+.contacto p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Formulario */
+.form-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.input-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box label, .mensaje label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.input-box input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e5e5e5;
+  font-size: 1em;
+}
+
+.mensaje textarea {
+  width: 100%;
+  resize: none;
+}
+
+/* Botón enviar */
+.btn-enviar {
+  margin-top: 20px;
+  background-color: #F89C49;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #f78b2e;
+}
+
+
+/* ===========================
+   CHATBOT
+=========================== */
+.chatbot-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 65px;
+  height: 65px;
+  background-color: #2e2e2e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  z-index: 999;
+}
+
+.chatbot-btn img {
+  width: 35px;
+  height: 35px;
+}
+
+.chatbot-btn:hover {
+  background-color: #0f0f0f;
+  transform: scale(1.1);
+}
+
+/* Ventana del chatbot */
+.chatbot-window {
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  width: 320px;
+  height: 420px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.25);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.chatbot-header {
+  background: #2e2e2e;
+  color: white;
+  padding: 15px;
+}
+
+.chatbot-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.chatbot-header p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.chatbot-body {
+  flex: 1;
+  padding: 15px;
+  background: #f5f5f5;
+  overflow-y: auto;
+}
+
+.bot-msg {
+  background: #e1e1e1;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.chatbot-input {
+  padding: 12px;
+  border-top: 1px solid #ddd;
+  display: flex;
+}
+
+.chatbot-input input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background: #eee;
+}
+

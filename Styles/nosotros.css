@@ -1,0 +1,94 @@
+/* ===========================
+   SECCIÓN SOBRE NOSOTROS
+=========================== */
+.sobre-nosotros h2,
+.sobre-nosotros h3 {
+  color: #F89C49;
+}
+
+.sobre-nosotros {
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.cards-nosotros {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.card {
+  background: #ffffff;
+  padding: 25px;
+  width: 280px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.cards-nosotros .card img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.cards-nosotros .card:hover img {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.card-mision:hover img {
+  content: url("../Imagenes/mision-hover.png");
+}
+
+.card-vision:hover img {
+  content: url("../Imagenes/vision-hover.png");
+}
+
+.card-valores:hover img {
+  content: url("../Imagenes/valores-hover.png");
+}
+
+.equipo img {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ===========================
+   RESPONSIVE 
+=========================== */
+@media (max-width: 900px) {
+  .sobre-nosotros {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .sobre-nosotros .contenido { order: 2; }
+  .sobre-nosotros .imagen { order: 1; }
+
+  .sobre-nosotros h2 {
+    font-size: 1.8em;
+  }
+
+  .sobre-nosotros p {
+    font-size: 1em;
+  }
+
+  .sobre-nosotros .imagen img {
+    width: 100%;
+    max-width: 350px;
+  }
+}

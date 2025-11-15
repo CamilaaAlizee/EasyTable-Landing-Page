@@ -8,7 +8,9 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./Styles/general.css" />
+  <link rel="stylesheet" href="./Styles/nosotros.css" />
+  
 </head>
 <body>
 
@@ -33,64 +35,56 @@
     </div>
   </header>
 
-<section class="sobre-nosotros">
-  <div class="contenido">
-    <h2>Sobre Nosotros <br></br></h2>
-    <p>
-      EasyTable nace como una iniciativa de estudiantes de Ingeniería de la Universidad Peruana de Ciencias Aplicadas, con la misión de transformar la forma en que las personas encuentran opciones gastronómicas. Nuestro enfoque combina tecnología, diseño y facilidad de uso para brindar una experiencia más rápida y confiable.
-    </p>
-  </div>
-
-  <div class="cards-nosotros">
-
-    <div class="card card-mision">
-      <img src="./Imagenes/mision.png" alt="Misión" />
-      <h3>Misión</h3>
+  <section class="sobre-nosotros">
+    <div class="contenido">
+      <h2>Sobre Nosotros <br></br></h2>
       <p>
-        Facilitar la búsqueda de restaurantes mediante una experiencia clara, intuitiva y guiada por inteligencia artificial.
+        EasyTable nace como una iniciativa de estudiantes de Ingeniería de la Universidad Peruana de Ciencias Aplicadas, con la misión de transformar la forma en que las personas encuentran opciones gastronómicas. Nuestro enfoque combina tecnología, diseño y facilidad de uso para brindar una experiencia más rápida y confiable.
       </p>
     </div>
 
-    <div class="card card-vision">
-      <img src="./Imagenes/vision.png" alt="Visión" />
-      <h3>Visión</h3>
-      <p>
-        Convertirnos en la plataforma gastronómica más confiable y accesible para usuarios locales y turistas.
-      </p>
+    <div class="cards-nosotros">
+
+      <div class="card card-mision">
+        <img src="./Imagenes/mision.png" alt="Misión" />
+        <h3>Misión</h3>
+        <p>
+          Facilitar la búsqueda de restaurantes mediante una experiencia clara, intuitiva y guiada por inteligencia artificial.
+        </p>
+      </div>
+
+      <div class="card card-vision">
+        <img src="./Imagenes/vision.png" alt="Visión" />
+        <h3>Visión</h3>
+        <p>
+          Convertirnos en la plataforma gastronómica más confiable y accesible para usuarios locales y turistas.
+        </p>
+      </div>
+
+      <div class="card card-valores">
+        <img src="./Imagenes/valores.png" alt="Valores" />
+        <h3>Valores</h3>
+        <p>
+          Innovación, transparencia y compromiso con brindar una experiencia de calidad para todos.
+        </p>
+      </div>
+
     </div>
 
-    <div class="card card-valores">
-      <img src="./Imagenes/valores.png" alt="Valores" />
-      <h3>Valores</h3>
+    <div class="equipo">
+      <h2>Conoce a Nuestro Equipo <br></br></h2>
       <p>
-        Innovación, transparencia y compromiso con brindar una experiencia de calidad para todos.
+        Somos un grupo de estudiantes apasionados por la tecnología, el diseño y las soluciones orientadas al usuario. Trabajamos buscando el balance entre eficiencia, estética y funcionalidad.
       </p>
+      <img src="./Imagenes/equipo.jpg" alt="Equipo de EasyTable" />
     </div>
-
-  </div>
-
-  <div class="equipo">
-    <h2>Conoce a Nuestro Equipo <br></br></h2>
-    <p>
-      Somos un grupo de estudiantes apasionados por la tecnología, el diseño y las soluciones orientadas al usuario. Trabajamos buscando el balance entre eficiencia, estética y funcionalidad.
-    </p>
-    <img src="./Imagenes/equipo.jpg" alt="Equipo de EasyTable" />
-  </div>
-</section>
-
-
+  </section>
 
   <footer>
     © 2025 EasyTable — Todos los derechos reservados.
   </footer>
 
-  <script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
+<script src="./Scripts/scripts.js"></script>
 
-  menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
-  });
-</script>
 </body>
 </html>

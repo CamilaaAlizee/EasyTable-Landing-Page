@@ -1,0 +1,206 @@
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.hero-texto {
+  flex: 1;
+}
+
+.hero-texto h2 {
+  font-size: 2.8rem;
+  color: #F89C49;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-texto p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* Botones */
+.hero-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn-dark, .btn-blue {
+  text-decoration: none;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-dark {
+  background-color: #111;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+}
+
+.btn-blue {
+  background-color: #41B1B2;
+}
+
+.btn-blue:hover {
+  background-color: #269092;
+}
+
+/* Imágenes hero */
+.hero-imagenes {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-imagenes .desktop {
+  width: 420px;
+}
+
+.hero-imagenes .mobile {
+  position: absolute;
+  width: 180px;
+  bottom: 0;
+  right: 0px;
+}
+
+
+/* ===========================
+   SECCIÓN FUNCIONALIDADES
+=========================== */
+.funcionalidades {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.funcionalidades h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #F89C49;
+}
+
+.funcionalidades .subtitulo {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+#funcionalidades h3 {
+  color: #F89C49;
+}
+
+.grid-funcionalidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card-funcion {
+  background: rgb(250, 250, 250);
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-funcion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.icon-img {
+  width: 80px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Texto dentro de tarjeta */
+.card-funcion h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.card-funcion p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card-funcion:hover .icon-calendar { content: url('../Imagenes/calendar-hover.png'); }
+.card-funcion:hover .icon-precio { content: url('../Imagenes/precio-hover.png'); }
+.card-funcion:hover .icon-vr { content: url('../Imagenes/vr-hover.png'); }
+.card-funcion:hover .icon-star { content: url('../Imagenes/star-hover.png'); }
+
+
+
+/* ===========================
+   RESPONSIVE 
+=========================== */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-imagenes {
+    margin-bottom: 30px;
+  }
+
+  .hero-imagenes .desktop {
+    width: 80%;
+    max-width: 350px;
+  }
+
+  .hero-imagenes .mobile {
+    width: 30%;
+    max-width: 130px;
+    right: 15%;
+  }
+
+  .hero-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-botones a {
+    width: 70%;
+    max-width: 250px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .funcionalidades { padding: 60px 0; }
+  .card-funcion { max-width: 90%; }
+}
+
