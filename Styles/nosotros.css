@@ -47,15 +47,15 @@
 }
 
 .card-mision:hover img {
-  content: url("../Imagenes/mision-hover.png");
+  content: url("../Images/mision-hover.png");
 }
 
 .card-vision:hover img {
-  content: url("../Imagenes/vision-hover.png");
+  content: url("../Images/vision-hover.png");
 }
 
 .card-valores:hover img {
-  content: url("../Imagenes/valores-hover.png");
+  content: url("../Images/valores-hover.png");
 }
 
 .equipo img {

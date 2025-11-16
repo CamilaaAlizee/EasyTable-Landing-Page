@@ -63,7 +63,7 @@
 }
 
 /* Imágenes hero */
-.hero-imagenes {
+.hero-Images {
   position: relative;
   flex: 1;
   display: flex;
@@ -71,11 +71,11 @@
   align-items: center;
 }
 
-.hero-imagenes .desktop {
+.hero-Images .desktop {
   width: 420px;
 }
 
-.hero-imagenes .mobile {
+.hero-Images .mobile {
   position: absolute;
   width: 180px;
   bottom: 0;
@@ -153,10 +153,10 @@
   line-height: 1.5;
 }
 
-.card-funcion:hover .icon-calendar { content: url('../Imagenes/calendar-hover.png'); }
-.card-funcion:hover .icon-precio { content: url('../Imagenes/precio-hover.png'); }
-.card-funcion:hover .icon-vr { content: url('../Imagenes/vr-hover.png'); }
-.card-funcion:hover .icon-star { content: url('../Imagenes/star-hover.png'); }
+.card-funcion:hover .icon-calendar { content: url('../Images/calendar-hover.png'); }
+.card-funcion:hover .icon-precio { content: url('../Images/precio-hover.png'); }
+.card-funcion:hover .icon-vr { content: url('../Images/vr-hover.png'); }
+.card-funcion:hover .icon-star { content: url('../Images/star-hover.png'); }
 
 
 
@@ -171,16 +171,16 @@
     text-align: center;
   }
 
-  .hero-imagenes {
+  .hero-Images {
     margin-bottom: 30px;
   }
 
-  .hero-imagenes .desktop {
+  .hero-Images .desktop {
     width: 80%;
     max-width: 350px;
   }
 
-  .hero-imagenes .mobile {
+  .hero-Images .mobile {
     width: 30%;
     max-width: 130px;
     right: 15%;
